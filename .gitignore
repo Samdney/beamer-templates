@@ -17,5 +17,7 @@
 *.ilg
 *.ind
 *.rpi
+*.nav
+*.snm
 makepdf
 mystuff/

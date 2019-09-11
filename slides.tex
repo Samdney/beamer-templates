@@ -1,0 +1,250 @@
+\documentclass[ucs,10pt]{beamer}
+
+\usepackage[utf8x]{inputenc} 
+\usepackage[english]{babel}
+\usepackage{xcolor}
+%\usepackage{float}
+%\restylefloat{figure}
+
+\usepackage{url}
+\usepackage{verbatim}
+
+\usepackage{lmodern}
+%{\fontsize{yourFontsize}{yourBaseLineDistance} \selectfont}
+
+\include{beamer-template}
+
+
+\titleimage{titleimage}
+
+\title[MyTitleShort]{myTitle}
+%\subtitle{YourSubtitle}
+
+\author[Zöbelein]{Carolin Zöbelein}
+
+\institute[\url{https://research.carolin-zoebelein.de}]{Independent mathematical scientist}
+
+\date[myDate]{myEvent/Conference, myDate}
+
+% PDF information. Can be left out.
+\subject{myTitle}
+
+\renewcommand{\footlinetext}{\insertshortinstitute, \insertshorttitle, \insertshortdate}
+% \insertshortauthor, \insertshortinstitute, \insertshorttitle, \insertshortdate, ...
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+% *************************************************************************
+\begin{document}
+% *************************************************************************
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{An example}
+
+	\begin{center}
+		{\fontsize{12}{12} \selectfont \textbf{How slides shoud look like?}}
+	\end{center}	
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{An example}
+
+	\begin{center}
+		{\fontsize{12}{12} \selectfont \textbf{Simple itemizes}}
+	\end{center}
+
+	\vspace{0.3cm}
+	\begin{center}
+		\begin{minipage}[b]{.4\linewidth}
+		\begin{center}
+			\pause \textbf{Ice}
+			\begin{itemize}
+				\item Cold
+				\item Colder
+				\item Very Cold				
+			\end{itemize}			
+		%\vspace{0.6cm}	
+		\end{center}
+		\end{minipage}
+		%\hspace{.1\linewidth}
+		\begin{minipage}[b]{.4\linewidth}
+		\begin{center}
+			\pause \textbf{Cream}
+			\begin{itemize}
+				\item Soft		
+				\item Softer
+				\item Very Soft
+			\end{itemize}
+		\end{center}
+		\end{minipage}
+	\end{center}
+
+	\vspace{0.3cm}
+	\pause\begin{center}I like it!\end{center}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{Tableofcontents}
+  \tableofcontents % option [pausesections]
+\end{frame}
+% *************************************************************************
+\section{To Appear}
+% *************************************************************************
+\begin{frame}{All appear at once}
+	
+	\begin{minipage}[b]{.4\linewidth}
+		\begin{center}
+			Cat
+		\end{center}
+	\end{minipage}
+	%\hspace{.1\linewidth}
+	\begin{minipage}[b]{.4\linewidth}
+		\begin{center}
+			Dog
+		\end{center}
+	\end{minipage}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{... or not.}
+
+	\begin{center}
+		Cat
+	\end{center}
+
+	\begin{center}
+		Dog
+	\end{center}
+
+	\pause \begin{center}
+		Mouse
+	\end{center}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\section{One Section}
+\begin{frame}{Show section title}
+
+	\begin{center}
+		{\fontsize{12}{12} \selectfont \textbf{One Section}}
+	\end{center}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{Hello World}
+
+	\begin{center}
+		\textbf{Hello World}
+	\end{center}
+
+	%\vspace{0.3cm}
+	\begin{minipage}[b]{.4\linewidth}
+		\begin{flushleft}
+			Why?
+	\end{flushleft}
+	\end{minipage}
+	%\hspace{.1\linewidth}
+	\begin{minipage}[b]{.4\linewidth}
+		\begin{flushleft}
+			\pause What?
+		\end{flushleft}
+	\end{minipage}
+
+\end{frame}
+% *************************************************************************
+\subsection{An other Section}
+% *************************************************************************
+\begin{frame}{An other Section}
+
+	\begin{center}An other new section\end{center}
+	
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{An equation}
+You can also show equations, of course:
+	
+	\[ fun = \int_{0}^{\infty} \phi\ \mathrm{slides}\, x \ \mathrm{d}x \]
+	$\phi$ Entertainment factor
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\section{Appearing in three parts}
+\begin{frame}{Appearing in three parts}
+
+	\pause \textbf{Part 1}
+	\begin{itemize}
+		\item Hi
+		\item Hihi
+	\end{itemize}
+	
+	\pause \vspace{0.3cm}
+	\textbf{Part 2}
+	\begin{itemize}
+		\item Ha
+		\item Haha
+	\end{itemize}
+
+	\pause \vspace{0.3cm}
+	\textbf{Part 3}
+	\begin{itemize}
+		\item He
+		\item Hehe
+	\end{itemize}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{Any questions?}
+
+	\begin{center}
+		Questions are the sense of life.\\
+		42
+	\end{center}
+
+\end{frame}
+% *************************************************************************
+% *************************************************************************
+\begin{frame}{Sources}
+ 
+	\textbf{Titlepage}
+	\begin{thebibliography}{10}
+		\setbeamertemplate{bibliography item}[triangle]
+		\bibitem{CiteA} \url{https://example01.com}
+		\setbeamertemplate{bibliography item}[triangle]
+		\bibitem{CiteB} \url{https://example02.com}				
+	\end{thebibliography}
+
+	\vspace{0.3cm}
+	\textbf{Something}
+	\begin{thebibliography}{10}
+		\setbeamertemplate{bibliography item}[online]
+		\bibitem{CiteC}\url{https://example03.com}
+	\end{thebibliography}
+
+	\vspace{0.3cm}
+	\textbf{Something Else}
+	\begin{thebibliography}{10}
+		\setbeamertemplate{bibliography item}[article]
+		\bibitem{CiteD} \url{https://example04.com}
+	\end{thebibliography}
+
+
+\end{frame}
+% *************************************************************************
+\end{document}
